@@ -1,8 +1,7 @@
 import styles from './css/main.scss';
 import React from 'react';
-import MainPage from './mainPage.js'
 
-export default class App extends React.Component {
+export default class MainPage extends React.Component {
 
   displayName: 'App';
   props: any;
@@ -17,18 +16,19 @@ export default class App extends React.Component {
     const main =  {
       display: "flex",
       flexWrap: "wrap",
-      justifyContent: "center",
-      flexDirection: "row",
       background: "#FFFFFF",
-      width: "100%",
-      height: "2600px",
+      width: "300px",
+      height: "600px",
+      border: "solid black 1px",
+      marginTop: "100px",
     }
 
     return (
 
       <div style = {main} >
-        <MainPage />
+
       </div>
+
     );
   }
 }
